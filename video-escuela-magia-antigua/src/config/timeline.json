@@ -3,39 +3,91 @@
   "fps": 30,
   "duration": 44.5,
   "scenes": {
-    "s1": [0, 5.0],
-    "s2": [5.0, 10.0],
-    "s3": [10.0, 19.3],
-    "s4": [19.3, 28.7],
-    "s5": [28.7, 34.0],
-    "s6": [34.0, 44.5]
+    "s1": [
+      0,
+      5.0
+    ],
+    "s2": [
+      5.0,
+      10.0
+    ],
+    "s3": [
+      10.0,
+      19.3
+    ],
+    "s4": [
+      19.3,
+      28.7
+    ],
+    "s5": [
+      28.7,
+      34.0
+    ],
+    "s6": [
+      34.0,
+      44.5
+    ]
   },
   "crossfade": 0.6,
   "voice": [
-    {"id": "l1", "start": 5.5},
-    {"id": "l2", "start": 10.05},
-    {"id": "l3", "start": 19.6},
-    {"id": "l4a", "start": 29.0},
-    {"id": "l4b", "start": 30.85},
-    {"id": "l5", "start": 34.35},
-    {"id": "l6", "start": 37.3}
+    {
+      "id": "l1",
+      "start": 5.5
+    },
+    {
+      "id": "l2",
+      "start": 10.05
+    },
+    {
+      "id": "l3",
+      "start": 19.6
+    },
+    {
+      "id": "l4a",
+      "start": 29.0
+    },
+    {
+      "id": "l4b",
+      "start": 30.85
+    },
+    {
+      "id": "l5",
+      "start": 34.35
+    },
+    {
+      "id": "l6",
+      "start": 37.3
+    }
   ],
   "events": {
     "candle1Ignite": 0.8,
-    "keyLift": 5.0,
-    "keyInsert": 6.5,
-    "keyTurnStart": 6.75,
-    "keyTurnEnd": 7.55,
-    "strapOpen": 7.6,
-    "coverOpenStart": 7.95,
-    "coverOpenEnd": 9.5,
-    "candlesIgnite": [8.3, 8.65, 9.0, 9.3],
-    "pageFlutter": [9.15, 9.45, 9.75],
+    "keyLift": 5.45,
+    "keyInsert": 6.85,
+    "keyTurnStart": 7.05,
+    "keyTurnEnd": 7.75,
+    "strapOpen": 7.8,
+    "coverOpenStart": 8.1,
+    "coverOpenEnd": 9.6,
+    "candlesIgnite": [
+      8.45,
+      8.8,
+      9.1,
+      9.4
+    ],
+    "pageFlutter": [
+      9.25,
+      9.55,
+      9.85
+    ],
     "candleCloseIgnite": 10.55,
     "quillWriteStart": 16.3,
     "quillWriteEnd": 19.0,
     "titleHit": 19.85,
-    "moduleFlips": [28.95, 29.45, 29.95],
+    "moduleFlips": [
+      28.95,
+      29.45,
+      29.95
+    ],
     "weeksHit": 30.85,
     "ctaHit": 37.3,
     "endCard": 40.6

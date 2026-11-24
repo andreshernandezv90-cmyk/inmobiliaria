@@ -123,9 +123,10 @@ export const Grimoire: React.FC<{state: GrimoireState}> = ({state}) => {
     const left = new THREE.MeshStandardMaterial({map: pageTexture('left', 2), roughness: 0.9});
     const endpaper = new THREE.MeshStandardMaterial({color: '#3b2416', roughness: 0.8});
     const brass = new THREE.MeshStandardMaterial({color: '#b08a4a', metalness: 1, roughness: 0.34});
+    const cornerBrass = new THREE.MeshStandardMaterial({color: '#7d5f32', metalness: 0.9, roughness: 0.62, bumpMap: cm.bump, bumpScale: 1.5});
     const dark = new THREE.MeshStandardMaterial({color: '#050302', roughness: 1});
     const strap = new THREE.MeshStandardMaterial({color: '#2c1a10', roughness: 0.7});
-    return {leather, leatherPlain, edge, right, left, endpaper, brass, dark, strap};
+    return {leather, leatherPlain, edge, right, left, endpaper, brass, cornerBrass, dark, strap};
   }, []);
   // precarga de la página de escritura (comparte textura con FlipPage)
   useMemo(() => writingPage(), []);
@@ -181,8 +182,14 @@ export const Grimoire: React.FC<{state: GrimoireState}> = ({state}) => {
             [W / 2 - 0.1, D / 2 - 0.1],
             [W / 2 - 0.1, -D / 2 + 0.1],
           ].map(([x, z], i) => (
-            <mesh key={i} position={[x, T + 0.006, z]} material={mats.brass} castShadow>
-              <boxGeometry args={[0.2, 0.014, 0.2]} />
+            <mesh
+              key={i}
+              position={[x - 0.02, T + 0.006, z + (z > 0 ? -0.02 : 0.02)]}
+              rotation={[0, z > 0 ? Math.PI / 4 : (3 * Math.PI) / 4, 0]}
+              material={mats.cornerBrass}
+              castShadow
+            >
+              <cylinderGeometry args={[0.16, 0.16, 0.012, 3]} />
             </mesh>
           ))}
         </group>

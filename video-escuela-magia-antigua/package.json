@@ -5,7 +5,7 @@
   "description": "Video comercial vertical 9:16 — Escuela de Magia Antigua · La Llave de la Bruja",
   "scripts": {
     "studio": "remotion studio",
-    "render": "remotion render EscuelaMagiaAntigua out/escuela-magia-antigua.mp4",
+    "render": "remotion render EscuelaMagiaAntigua out/render-raw.mp4 && bash scripts/finalize.sh",
     "still": "remotion still EscuelaMagiaAntigua out/frame.png",
     "audio": "python3 scripts/build_audio.py",
     "typecheck": "tsc --noEmit"

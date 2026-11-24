@@ -15,9 +15,9 @@ export const shots: Record<string, CamKey[]> = {
   // La llave: vuela hasta la cerradura, gira, el broche cede y el libro se abre
   s2: [
     {t: 5.0, pos: [1.7, 2.3, 4.2], look: [0.4, 0.8, 0], fov: 44},
-    {t: 6.45, pos: [2.55, 1.55, 4.3], look: [1.7, 0.3, 0], fov: 38},
-    {t: 7.7, pos: [2.45, 1.45, 3.9], look: [1.65, 0.3, 0], fov: 38},
-    {t: 9.5, pos: [0.25, 5.2, 4.6], look: [-0.95, 0.2, -0.4], fov: 46},
+    {t: 6.8, pos: [2.55, 1.55, 4.3], look: [1.7, 0.3, 0], fov: 38},
+    {t: 7.95, pos: [2.45, 1.45, 3.9], look: [1.65, 0.3, 0], fov: 38},
+    {t: 9.65, pos: [0.25, 5.2, 4.6], look: [-0.95, 0.2, -0.4], fov: 46},
     {t: 10.7, pos: [0.15, 5.0, 4.2], look: [-1.0, 0.2, -0.5], fov: 46},
   ],
   // El conocimiento: vela que se enciende + hierbas

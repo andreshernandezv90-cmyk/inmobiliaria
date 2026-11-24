@@ -55,7 +55,7 @@ npm run audio
 npm run render
 ```
 
-`npm run studio` abre la vista previa interactiva. `npm run audio` reconstruye la banda sonora después de cambiar tiempos o voces. `npm run render` genera `out/escuela-magia-antigua.mp4`.
+`npm run studio` abre la vista previa interactiva. `npm run audio` reconstruye la banda sonora después de cambiar tiempos o voces. `npm run render` genera `out/escuela-magia-antigua.mp4` (render de Remotion + conversión final a yuv420p con `faststart`). El render tarda unos 45 minutos con WebGL por software y 4 hilos; con GPU es mucho más rápido.
 
 ## Personalización
 
