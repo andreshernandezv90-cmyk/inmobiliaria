@@ -15,6 +15,8 @@ Config.setOverwriteOutput(true);
 // WebGL por software (SwiftShader) para escenas Three.js sin GPU.
 Config.setChromiumOpenGlRenderer('swangle');
 Config.setConcurrency(4);
+// Montar un lienzo 3D nuevo (cambio de escena) compila shaders por software: margen amplio.
+Config.setTimeoutInMilliseconds(300000);
 Config.setCodec('h264');
 Config.setCrf(16);
 Config.setPixelFormat('yuv420p');
