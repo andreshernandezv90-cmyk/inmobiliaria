@@ -1,0 +1,29 @@
+{
+  "name": "video-escuela-magia-antigua",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Video comercial vertical 9:16 — Escuela de Magia Antigua · La Llave de la Bruja",
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render EscuelaMagiaAntigua out/escuela-magia-antigua.mp4",
+    "still": "remotion still EscuelaMagiaAntigua out/frame.png",
+    "audio": "python3 scripts/build_audio.py",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource/cinzel": "^5.3.0",
+    "@fontsource/cormorant-garamond": "^5.3.0",
+    "@react-three/fiber": "^9.8.2",
+    "@remotion/cli": "^4.0.546",
+    "@remotion/three": "^4.0.546",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "remotion": "^4.0.546",
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.2",
+    "@types/three": "^0.180.0",
+    "typescript": "^5.9.3"
+  }
+}
